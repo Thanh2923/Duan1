@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <aside>
+          <section class="md-6">
+             <!-- <p>
+              <i class="fa-sharp fa-regular fa-envelope"></i>
+              Thanhnvpd09249@fpt.edu.vn | 
+              <i class="fa-solid fa-phone-flip"></i>
+              0931247957
+             </p> -->
+          </section>
+          <section class="md-6-right">
+              <!-- <div
+                 class="md-6-right-menu">
+                  <ul>
+                      <li><a href="">Liên hệ</a></li>
+                      <li><a href="">Hỗ trợ</a></li>
+                      <li><a href="">Bảo hành</a></li>
+                      <li><a href="">Giỏ hàng</a></li>
+                  </ul>
+              </div
+              > -->
+          </section>
+          <section class="header-content">
+              <div
+                class="header-content-t " >
+                  <i onclick="hienthimenu()" class="fa fa-bars"></i>
+              </div
+              >
+            <div
+             class="header-content-1">
+              <img src="img/logo-(1).png" alt="">
+            </div
+            >
+            <div
+             class="header-content-2">
+              <input type="text" placeholder="Tìm kiếm...">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div
+            >
+            <div
+             class="header-content-3">
+              <ul>
+                  <li><i class="fa-solid fa-user"></i><br><a class="open-modal-dn" href="">Đăng Nhập</a></li>
+                  <li><i  class="fa-solid fa-user-plus"></i><br><a class="open-modal" href="">Đăng Ký</a></li>
+                  <li><i class="fa-solid fa-cart-shopping"></i><br><a href="">Giỏ Hàng</a></li>
+              </ul>
+              <div
+               class="header-content-33" >
+                  <i class="fa-solid fa-cart-shopping"></i> 
+              </div
+              >
+            </div
+            > 
+          </section>
+          <section class="content-menu">
+              <div
+              >
+                  <ul>
+                      <li><a href="#" onclick="tc()">TRANG CHỦ</a></li>
+                      <li><a href="https://www.facebook.com/VIETNAMPHUOTCOM/">FANPAGE FB</a></li>
+                      <li><a onclick="nbh()" href="#">NÓN BẢO HIỂM</a>
+                      <ul>
+                          <li><a href="">Nón Funface</a></li>
+                          <li><a href="">Nón Thể Thao</a></li>
+                          <li><a href="">Nón Lật Hàm</a></li>
+                          <li><a href="">Nón Dual Sport</a></li>
+                          <li><a href="">Nón Cổ Điển</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="#" onclick="qabh()">QUẦN ÁO BẢO HỘ</a>
+                          <ul>
+                              <li><a href="">Sét Quần Áo</a></li>
+                              <li><a href="">Găng Tay</a></li>
+                              <li><a href="">Giày Moto</a></li>
+                              <li><a href="">Giày Tay Chân</a></li>
+                              <li><a href="">Áo Mưa Bộ Đi Tour</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="">PHỤ KIỆN </a>
+                          <ul>
+                              <li><a href="">Tem Nón</a></li>
+                              <li><a href="">Tem Dán Bình Xăng Xe</a></li>
+                              <li><a href="">Cammera - Tai nghe Bluetooth</a></li>
+                              <li><a href="">Khẩu Trang</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#" onclick="dn()">DẦU NHỚT</a></li>
+                      <li><a href="">PÔ XE MOTOR</a></li>
+                      <li><a href="">PHỤ TÙNG MOTOR</a></li>
+                      <li><a href="#" onclick="lh()">LIÊN HỆ</a></li>
+                  </ul>
+              </div
+              >
+          </section>
+        </aside>
+  </header>
+  <main>
+    <section class="modal">
+        <div
+         class="modal__overlay"></div
+            >
+        <div
+         class="modal_connent">
+            <div
+             class="x"><i class="fa-solid fa-x"></i></div
+                >
+            <form id="form-register">
+              <label class="title" for="name" >Tên đăng nhập :</label> 
+              <input  type="text" id="name" name="name" required>
+          
+              <label class="title" for="password">Mật khẩu :</label>
+              <input type="password" id="password" name="password" required>
+          
+              <label class="title" for="password">Nhập lại mật khẩu :</label>
+              <input type="password" id="password" name="password" required>
+
+              <label class="title" for="uses">Họ và Tên :</label>
+              <input type="uses" id="uses" name="uses" required>
+
+              <label class="title" for="email">Email :</label>
+              <input type="email" id="email" name="email" required>
+
+              <label class="title" for="phone">Số điện thoại :</label>
+              <input type="phone" id="phone" name="phone" required>
+
+              <label class="title" for="address">Địa chỉ :</label>
+              <input type="address" id="address" name="address" required>
+          
+              <input type="submit" id="register" value="Đăng ký">
+            </form>       
+        </div
+        >
+     </section> 
+     <section class="modal-2">
+    <div
+     class="modal__overlay-2"></div
+        >
+    <div
+     class="modal_connent-2">
+        <div
+         class="x-2"><i class="fa-solid fa-x"></i></div
+            >
+        <form id="form-register-2">
+          <label class="title" for="name" >Tên đăng nhập :</label> 
+          <input  type="text" id="name" name="name" required>
+      
+          <label class="title" for="password">Mật khẩu :</label>
+          <input type="password" id="password" name="password" required>
+          <input type="submit" id="register-2" value="Đăng Nhập">
+        </form>         
+    </div
+    >
+     </section>    
+     <section class="total-content-2">
+        <div
+         style="width: 100%; height: 30px;"></div
+            >
+        <div
+         class="total-content-item">
+            <div
+             class="category">
+                <div
+                 class="sidebar-title">
+                    <h3>DANH MỤC SẢN PHẨM</h3>
+                </div
+                >
+                <div
+                 class="sidebar-title-1">
+                    <input type="checkbox" name="" id=""><p>Nón Fullface</p>
+                    <input type="checkbox" name="" id=""><p>Nón Fullface</p>
+                    <input type="checkbox" name="" id=""><p>Nón Fullface</p>
+                    <input type="checkbox" name="" id=""><p>Nón Fullface</p>
+                    <input type="checkbox" name="" id=""><p>Nón Fullface</p>
+                    <input type="checkbox" name="" id=""><p>Nón Fullface</p>
+                    <input type="checkbox" name="" id=""><p>Nón Fullface</p>
+                </div
+                >
+                <div
+                 class="sidebar-title">
+                    <h3>Giá</h3>
+                </div
+                >
+                <div
+                 class="sidebar-title-1">
+                    <input type="checkbox" name="" id=""><p>Dưới 500.000đ</p>
+                    <input type="checkbox" name="" id=""><p>Từ 500.000 đến 1.000.000</p>
+                    <input type="checkbox" name="" id=""><p>Từ 1.000.000 đến 2.000.000</p>
+                    <input type="checkbox" name="" id=""><p>Từ 2.000.000 đến 5.000.000</p>
+                    <input type="checkbox" name="" id=""><p>Trên 5.000.000đ</p>
+                </div
+                >
+                <div
+                 class="sidebar-title">
+                    <h3>Màu sắc</h3>
+                </div
+                >   
+                <div
+                 class="sidebar-title-1">
+                    <input type="checkbox" name="" id=""><p>Trắng</p>
+                    <input type="checkbox" name="" id=""><p>Đen</p>
+                    
+                </div
+                >
+                <div
+                 class="sidebar-title">
+                    <h3>Thương hiệu</h3>
+                </div
+                >   
+                <div
+                 class="sidebar-title-1">
+                   <div
+                    class="th-img">
+                    <img src="img/th1.jpg" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th2.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th3.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th4.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th5.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th6.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th7.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th8.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th9.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th10.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th11.png" alt="">
+                   </div
+                   >
+                   <div
+                    class="th-img">
+                    <img src="img/th12.png" alt="">
+                   </div
+                   >
+                    
+                </div
+                >
+            </div
+            >
+        <div
+         class="total-product-2">
+            <div
+             class="product-1">
+                <img src="img/dbh1.jpg" alt="">
+               <h3> <a href="">ÁO TÚI KHÍ FALCON JK01 VIETNAMPHUOT</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>970.000đ</span>
+                <del>1.190.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh2.jpg" alt="">
+               <h3> <a href="">ÁO TÚI KHÍ FALCON JK01</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.990.000đ</span>
+                <del>2.500.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh3.jpg" alt="">
+               <h3> <a href="">Áo Mưa Bộ Givi PRS04 AXN</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.390.000đ</span>
+                <del>1.990.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh4.png" alt="">
+               <h3> <a href="">Áo giáp LS2 Alba Man chính hãng FREESHIP</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.090.000đ</span>
+                <del>1.319.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh5.jpg" alt="">
+               <h3> <a href="">ÁO MƯA BỘ PHẢN QUANG POST KOREA</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.850.000đ</span>
+                <del>2.340.000đ</del>
+               </h5>
+            </div
+            >
+        </div
+        >
+        <div
+         class="total-product-2">
+            <div
+             class="product-1">
+                <img src="img/dbh6.jpg" alt="">
+               <h3> <a href="">Áo Giáp Komine JK 063 </a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.550.000đ</span>
+                <del>2.390.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh7.jpg" alt="">
+               <h3> <a href="">ÁO BẢO HỘ KOMINE JK-079</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.150.000đ</span>
+                <del>1.590.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/db8.jpg" alt="">
+               <h3> <a href="">ÁO GIÁP ALPINESTARS REACTION AIR</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.850.000đ</span>
+                <del>2.500.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh9.png" alt="">
+               <h3> <a href="">Áo mưa bộ chính hãng givi PRS01</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1990.000đ</span>
+                <del>2.250.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh10.jpg" alt="">
+               <h3> <a href="">NónÁo mưa bộ chính hãng GIVI CRS02</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.390.000đ</span>
+                <del>1.780.000đ</del>
+               </h5>
+            </div
+            >
+        </div
+        >
+        <div
+         class="total-product-2">
+            
+            <div
+             class="product-1">
+                <img src="img/dbh11.jpg" alt="">
+               <h3> <a href="">Áo Giáp Scoyco - JK36 đen xanh</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.134.000đ</span>
+                <del>1.700.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh12.jpg" alt="">
+               <h3> <a href="">Áo Khoác Komine Jean</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.290.000đ</span>
+                <del>1.660.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh13.jpg" alt="">
+               <h3> <a href="">Áo Giáp Scoyco JK92</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.350.000đ</span>
+                <del>1.780.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh14.jpg" alt="">
+               <h3> <a href="">Áo Giáp Scoyco - JK36</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.950.000đ</span>
+                <del>2.500.000đ</del>
+               </h5>
+            </div
+            >
+            <div
+             class="product-1">
+                <img src="img/dbh15.jpg" alt="">
+               <h3> <a href="">Áo Giáp Scoyco JK37W</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.790.000đ</span>
+                <del>2.000.000đ</del>
+               </h5>
+            </div
+            >
+        </div
+        >
+        </div
+        >
+    </section >
+  </main>
+  <footer>
+    <section>
+        <div
+         class="footer-1">
+           <div
+            class="footer-1-content">
+            <h1 style="font-size: 20px;">LIÊN HỆ VỚI CHÚNG TÔI</h1>
+            <h3>
+                <img src="img/logo.png" alt="">
+            </h3>
+            <p> Showroom Đà Nẵng : 56 Mẹ Nhu, Thanh Khê Tây, Quận Thanh Khê, Đà Nẵng.</p>
+                
+            <p> Điện thoại: <b style="color:brown;"> 0931247996</b></p>
+              
+            <p> Email: thanhnvpd09249@fpt.edu.vn</p>
+            <p>   Facebook: Fb.com/thanh233599</p>
+              <strong>  Mở cửa T2-CN: 9h-21h </strong>
+           
+           </div
+           >
+        </div
+        >
+        <div
+         class="footer-2">
+            <div
+             class="footer-1-content">
+                <h1 style="font-size: 20px;">Về chúng tôi</h1>
+               <p>Với phương châm <b>AN TOÀN_NIỀM TIN_CHẤT LƯỢNG</b></p>
+               <p>Chúng tôi chuyên nhập khẩu, mua bán nón bảo hiểm cao cấp các loại và phân phối phụ tùng nón bảo hiểm chất lượng cao để mang đến sự AN TOÀN cho bạn.</p>
+               <h1>CHÍNH SÁCH</h1>
+               <a href="">Chính sách thanh toán</a> <br>
+                <a href="">Chính sách bảo hành</a> <br>
+                <a href="">Chính sách đổi trả</a> <br>
+                <a href="">Chính sách bảo mật</a> <br>
+                <a href="">Chính sách vận chuyển và bảo hành</a>
+               </div
+               >
+        </div
+        >
+    </section>
+    <div
+     class="footer-4">
+        <p>© 2023 Việt Nam Phượt - Website chính thức của Thương Hiệu Mũ bảo hiểm phượt - Thiết kế bởi sikido.vn</p>
+    </div
+    >
+   </footer>
+    <script src="main.js"></script>
+</body>
+</html>

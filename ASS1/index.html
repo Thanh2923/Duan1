@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Thành</title>
+</head>
+<body>
+    <header>
+          <aside>
+            <section class="md-6">
+               <!-- <p>
+                <i class="fa-sharp fa-regular fa-envelope"></i>
+                Thanhnvpd09249@fpt.edu.vn | 
+                <i class="fa-solid fa-phone-flip"></i>
+                0931247957
+               </p> -->
+            </section>
+            <section class="md-6-right">
+                <!-- <div class="md-6-right-menu">
+                    <ul>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Hỗ trợ</a></li>
+                        <li><a href="">Bảo hành</a></li>
+                        <li><a href="">Giỏ hàng</a></li>
+                    </ul>
+                </div> -->
+            </section>
+            <section class="header-content">
+                <div  class="header-content-t " >
+                    <i onclick="hienthimenu()" class="fa fa-bars"></i>
+                </div>
+              <div class="header-content-1">
+                <img src="img/logo-(1).png" alt="">
+              </div>
+              <div class="header-content-2">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              <div class="header-content-3">
+                <ul>
+                    <li><i class="fa-solid fa-user"></i><br><a class="open-modal-dn" href="">Đăng Nhập</a></li>
+                    <li><i  class="fa-solid fa-user-plus"></i><br><a class="open-modal" href="">Đăng Ký</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><br><a href="">Giỏ Hàng</a></li>
+                </ul>
+                <div class="header-content-33" >
+                    <i class="fa-solid fa-cart-shopping"></i> 
+                </div>
+              </div> 
+            </section>
+            <section class="content-menu" >
+                <div>
+                    <ul>
+                        <li><a href="#" onclick="tc()">TRANG CHỦ</a></li>
+                        <li><a href="" >FANPAGE FB</a></li>
+                        <li><a  href="#" onclick="nbh()">NÓN BẢO HIỂM</a>
+                        <ul>
+                            <li><a href="">Nón Funface</a></li>
+                            <li><a href="">Nón Thể Thao</a></li>
+                            <li><a href="">Nón Lật Hàm</a></li>
+                            <li><a href="">Nón Dual Sport</a></li>
+                            <li><a href="">Nón Cổ Điển</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#" onclick="qabh()" >QUẦN ÁO BẢO HỘ</a>
+                            <ul>
+                                <li><a href="">Sét Quần Áo</a></li>
+                                <li><a href="">Găng Tay</a></li>
+                                <li><a href="">Giày Moto</a></li>
+                                <li><a href="">Giày Tay Chân</a></li>
+                                <li><a href="">Áo Mưa Bộ Đi Tour</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">PHỤ KIỆN </a>
+                            <ul>
+                                <li><a href="">Tem Nón</a></li>
+                                <li><a href="">Tem Dán Bình Xăng Xe</a></li>
+                                <li><a href="">Cammera - Tai nghe Bluetooth</a></li>
+                                <li><a href="">Khẩu Trang</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">DẦU NHỚT</a></li>
+                        <li><a href="">PÔ XE MOTOR</a></li>
+                        <li><a href="">PHỤ TÙNG MOTOR</a></li>
+                        <li><a href="#" >LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </section>
+          </aside>
+    </header>
+
+       <main>
+         <section class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal_connent">
+                <div class="x"><i class="fa-solid fa-x"></i></div>
+                <form id="form-register">
+                  <label class="title" for="name" >Tên đăng nhập :</label> 
+                  <input  type="text" id="name" name="name" required>
+              
+                  <label class="title" for="password">Mật khẩu :</label>
+                  <input type="password" id="password" name="password" required>
+              
+                  <label class="title" for="password">Nhập lại mật khẩu :</label>
+                  <input type="password" id="password" name="password" required>
+
+                  <label class="title" for="uses">Họ và Tên :</label>
+                  <input type="uses" id="uses" name="uses" required>
+
+                  <label class="title" for="email">Email :</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label class="title" for="phone">Số điện thoại :</label>
+                  <input type="phone" id="phone" name="phone" required>
+
+                  <label class="title" for="address">Địa chỉ :</label>
+                  <input type="address" id="address" name="address" required>
+              
+                  <input type="submit" id="register" value="Đăng ký">
+                </form>       
+            </div>
+         </section> 
+         <section class="modal-2">
+        <div class="modal__overlay-2"></div>
+        <div class="modal_connent-2">
+            <div class="x-2"><i class="fa-solid fa-x"></i></div>
+            <form id="form-register-2">
+              <label class="title" for="name" >Tên đăng nhập :</label> 
+              <input  type="text" id="name" name="name" required>
+          
+              <label class="title" for="password">Mật khẩu :</label>
+              <input type="password" id="password" name="password" required>
+              <input type="submit" id="register-2" value="Đăng Nhập">
+            </form>         
+        </div>
+         </section>  
+         <section class="modal_Cart">
+            <nav class="everlayy"></nav>
+            <nav class="content_cart">
+              <nav class="xx"><i class="fa-solid fa-x"></i></nav>
+              <nav class="itemImg">
+                <nav class="itemImg_img">
+                  <img src="img/modal1.jpg" alt="" class="imgpc1" style="width: 100%; height: 400px;">
+                </nav>
+                <nav class="itemImg_img_deail">
+                  <nav class="itemImg_img_deail_1">
+                    <img id="img1" src="img/modal1.jpg" alt="" style="width:90%;height: 90% ;padding: 5px;">
+                  </nav>
+                  <nav class="itemImg_img_deail_1">
+                    <img id="img1" src="img//modal2.jpg" alt="" style="width:90%;height: 90% ;padding: 5px;">
+                  </nav>
+                  <nav class="itemImg_img_deail_1">
+                    <img id="img1" src="img//modal3.jpg" alt="" style="width:90%;height: 90% ;padding: 5px;">
+                  </nav>
+                  <nav class="itemImg_img_deail_1">
+                    <img id="img1" src="img//modal4.jpg" alt="" style="width:90%;height: 90% ;padding: 5px;">
+                  </nav>
+                  <nav class="itemImg_img_deail_1">
+                    <img id="img1" src="img//modal5.jpg" alt="" style="width:90%;height: 90% ;padding: 5px;">
+                  </nav>
+      
+                </nav>
+              </nav>
+              <div class="content_cart_cart">
+                <h3 style="font-size: 20px; font-weight: 800;" class="name">NÓN POC P01 CARBON MINI CHÍNH HÃNG FREESHIP TOÀN QUỐC</h3>
+                <div style="color: red; font-weight: 800 ; padding-left: 90px;">
+                  <p class="gia1"><span class="gia">99.000</span>đ</p>
+                  <span class="giathat">199.000đ</span>
+                </div>
+                <div style="width: 100%; height: 50px; display: flex; ">
+                  <div>
+                    <h6 style=" line-height: 50px;;font-size: 15px;padding:0px 20px;">Màu Sắc : </h6>
+                  </div>
+                  <div style="padding-right: 10px;">
+                    <h6 style="border: 1px solid #acb2b0 ; line-height: 50px;;font-size: 15px;padding:0px 20px;">Trắng</h6>
+                  </div>
+                  <div style="padding-right: 10px;">
+                    <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">Xanh</h6>
+                  </div>
+                  <div>
+                    <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">Vàng</h6>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div style="display: flex; width: 100%; height: 30px;">
+                  <div>
+                    <h6 style=" line-height: 30px;;font-size: 15px;padding:0px 20px;">Số Lượng : </h6>
+                  </div>
+                  <div style="padding-right: 10px; margin-top: 40px;">
+                    <input class="input_cart" style="padding: 10px ; width: 100px;" type="number" value="1" name="qi" max=""
+                      min="1">
+                  </div>
+                </div>
+                <div style="margin: 100px 0px 0 50px ">
+                  <button id="cart_button" >Thêm Vào Giỏ
+                    Hàng</button>
+                  <button class="muangay">Mua
+                    Ngay</button>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+         <section class="main1"   >
+            <section class="background-main">
+                <div class="background">
+                    <img id="move-ha" src="img/anhnen1.PNG" alt="">
+                    <div class="chevron-left" onclick="prex()"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div  class="chevron-right" onclick="next()"><i class="fa-solid fa-chevron-right"></i></div>
+                     <span id="dem">1/3</span>
+                </div>
+              <div class="item">
+                <div class="item-1">
+                    <img src="img/xe.png" alt="">
+                    <h3>GIAO HÀNG TOÀN QUỐC</h3>
+                </div>
+                <div class="item-1">
+                    <img src="img/x2.png" alt="">
+                    <h3>ĐỔI TRẢ NẾU BẠN KHÔNG HÀI LÒNG</h3>
+                </div>
+                <div class="item-1">
+                    <img src="img/x3.png" alt="">
+                    <h3>GIÁ CẢ CẠNH TRANH</h3>
+                </div>
+                <div class="item-1">
+                    <img src="img/x4.png" alt="">
+                    <h3>CAM KẾT CHẤT LƯỢNG</h3>
+                </div>
+              </div>
+            </section>
+           
+
+
+        <section class="total-product">
+            <div class="title-product">
+                <h1>SẢN PHẨM NỔI BẬT</h1>
+            </div>
+           <div class="total-product-child" style="display: block;">
+            <div class="product-1">
+                <img src="img/ha1.jpg" alt="">
+               <h3> <a href="">NÓN POC RETRO FULLFACE BLACK</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>490.000đ</span>
+                <del>590.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1">
+                <img src="img/ha2.jpg" alt="">
+               <h3> <a href="">NÓN POC CITY 3/4 TRẮNG FREESHIP</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1290.000đ</span>
+                <del>1590.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1 product-1-none">
+                <img src="img/ha3.jpg" alt="">
+               <h3> <a href="">NÓN POC RETRO FULLFACE ĐEN BÓNG FREESHIP</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>4.490.000đ</span>
+                <del>5.590.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1 product-1-none">
+                <img src="img/ha4.png" alt="">
+               <h3> <a href="">Mũ Bảo Hiểm Fullface POC REVO</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.600.000đ</span>
+                <del>2.100.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1 product-1-none">
+                <img src="img/ha5.png" alt="">
+               <h3> <a href="">NÓN POC CITY 3/4 PHẤN FREESHIP</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>3.390.000đ</span>
+                <del>4.500.000đ</del>
+               </h5>
+            </div>
+           
+           </div>
+
+        </section>
+
+            <section class="total-product1 ">
+            <div class="title-product">
+                <h1>SẢN PHẨM BÁN CHẠY</h1>
+            </div>
+           <div class="total-product-child">
+            <div class="product-1">
+                <img src="img/pr2-ha1.jpg" alt="">
+               <h3> <a href="">NÓN POC P01 CARBON MINI CHÍNH HÃNG</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.250.000đ</span>
+                <del>1.590.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1">
+                <img src="img/pr2-ha2.jpg" alt="">
+               <h3> <a href="">GĂNG TAY PRO-BIKER đen</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>120.000đ</span>
+                <del>200.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1">
+                <img src="img/pr2-ha3.jpg" alt="">
+               <h3> <a href="">GĂNG TAY VEMAR VE176 đen</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1,400,000đ</span>
+                <del>1.600.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1">
+                <img src="img/pr2-ha4.jpg" alt="">
+               <h3> <a href="">Mũ Fullface Yohe 977 Xanh xámFREESHIP</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.300.000đ</span>
+                <del>2.000.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1">
+                <img src="img/pr2-ha5.jpg" alt="">
+               <h3> <a href="">Nón Fullface TORC T18 - Đen bóng FREESHIP</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.950.000đ</span>
+                <del>2.990.000đ</del>
+               </h5>
+            </div>
+           
+           </div>
+            
+            <div class="total-product-child">
+                <div class="product-1">
+                    <img src="img/pr2-ha6.jpg" alt="">
+                   <h3> <a href="">PINLOCK FALCON FREESHIP</a></h3>
+                   <h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                   </h4>
+                   <h5>
+                    <span>490.000đ</span>
+                    <del>590.000đ</del>
+                   </h5>
+                </div>
+                <div class="product-1">
+                    <img src="img/pr2-ha7.jpg" alt="">
+                   <h3> <a href="">Khẩu trang POC CHÍNH HÃNG Van Thở Đôi cao</a></h3>
+                   <h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                   </h4>
+                   <h5>
+                    <span>90.000đ</span>
+                    <del>190.000đ</del>
+                   </h5>
+                </div>
+                <div class="product-1">
+                    <img src="img/pr2-ha8.jpg" alt="">
+                   <h3> <a href="">Đệm lót yên xe máy siêu êm, đàn hồi tốt cao cấp</a></h3>
+                   <h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                   </h4>
+                   <h5>
+                    <span>150.000đ</span>
+                    <del>220.000đ</del>
+                   </h5>
+                </div>
+                <div class="product-1">
+                    <img src="img/pr2-ha9.jpg" alt="">
+                   <h3> <a href="">Tem nón Venom V3</a></h3>
+                   <h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                   </h4>
+                   <h5>
+                    <span>290.000đ</span>
+                    <del>350.000đ</del>
+                   </h5>
+                </div>
+                <div class="product-1">
+                    <img src="img/pr2-ha10.png" alt="">
+                   <h3> <a href="">MŨ 3/4 BULLDOG POM</a></h3>
+                   <h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                   </h4>
+                   <h5>
+                    <span>1.200.000đ</span>
+                    <del>1.390.000đ</del>
+                   </h5>
+                </div>
+               
+               </div>
+            </section>
+
+                 <section class=" total-product">
+            <div class="title-product">
+                <h1>SẢN PHẨM KHUYẾN MÃI</h1>
+            </div>
+           <div class="total-product-child">
+            <div class="product-1">
+                <img src="img/pr3-ha1.jpg" alt="">
+               <h3> <a href="">NÓN POC P01 TRẮNG CHỮ XÁM CHÍNH HÃNG </a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.260.000đ</span>
+                <del>1.690.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1 ">
+                <img src="img/pr3-ha2.jpg" alt="">
+               <h3> <a href="">NÓN POC P01 HỒNG BÓNG CHÍNH HÃNG </a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>890.000đ</span>
+                <del>1.200.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1 product-1-none">
+                <img src="img/pr3-ha3.jpg" alt="">
+               <h3> <a href="">NÓN POC FALCON HỒNG TRẮNG CHÍNH HÃNG </a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>790.000đ</span>
+                <del>950.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1 product-1-none">
+                <img src="img/pr3-ha4.png" alt="">
+               <h3> <a href="">NÓN POC P01 TRẮNG CHỮ HÔNG CHÍNH HÃNG FREESHIP</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>1.100.000đ</span>
+                <del>1.390.000đ</del>
+               </h5>
+            </div>
+            <div class="product-1 product-1-none">
+                <img src="img/pr3-ha5.jpg" alt="">
+               <h3> <a href="">NÓN POC RETRO FULLFACE BLACK</a></h3>
+               <h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </h4>
+               <h5>
+                <span>3.390.000đ</span>
+                <del>3.550.000đ</del>
+               </h5>
+            </div>
+           
+           </div>
+                 </section>
+        
+                    <section class="total-product-item">
+                        <div class="title-product">
+                            <h1>SẢN PHẨM ƯNG Ý?!</h1>
+                        </div>
+                        <div class="product-item-chid">
+                            <div class="product-item">
+                                <img src="img/pr4-ha1.jpg" alt="">
+                               <div class="product-item-invincible">
+                                <h3>FULLFACE</h3>
+                               </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="img/pr4-ha2.jpg" alt="">
+                                <div class="product-item-invincible">
+                                    <h3>MŨ LẬT HÀM</h3>
+                                   </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="img/pr4-h3.jpg" alt="">
+                                <div class="product-item-invincible">
+                                    <h3>MŨ 3/4</h3>
+                                   </div>
+                            </div> 
+                        </div>
+                        <div class="product-item-chid">
+                            <div class="product-item">
+                                <img src="img/pr4-ha4.jpg" alt="">
+                                <div class="product-item-invincible">
+                                    <h4>CAMMERA - TAI NGHE</h4>
+                                   </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="img/pr4-ha5.jpg" alt="">
+                                <div class="product-item-invincible">
+                                    <h4>PHỤ TÙNG - LINH KIỆN</h4>
+                                   </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="img/pr4-ha6.jpg" alt="">
+                                <div class="product-item-invincible">
+                                    <h4>TRANG PHỤC BẢO HỘ</h4>
+                                   </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="total-product-item-2">
+                        <div class="title-product">
+                            <h1>CHĂM SÓC CHO NÓN !</h1>
+                        </div>
+                        <div class="product-item-chid">
+                            <div class="product-item">
+                                <img src="img/pr5-ha1.jpg" alt="">
+                               <div class="product-item-invincible">
+                                <h4>TEM/STICKER DÁN NÓN</h4>
+                               </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="img/pr5-ha2.jpg" alt="">
+                                <div class="product-item-invincible">
+                                    <h4>VỆ SINH NÓN</h4>
+                                   </div>
+                            </div>
+                            <div class="product-item">
+                                <img src="img/pr5-ha3.jpg" alt="">
+                                <div class="product-item-invincible">
+                                    <h4>PHỤ KIỆN TRANG TRÍ</h4>
+                                   </div>
+                            </div> 
+                        </div>
+                       
+                    </section>
+
+                    <section class="album-img">
+                        <div class="title-product">
+                            <h1>ALBUM ẢNH KHÁCH HÀNG</h1>
+                        </div>
+                         <div class="album-img-item">
+                            <div class="album-img-item-1 product-1-none">
+                                <img src="img/pr6-ha1.jpg" alt="">
+                                <h3>BẠN KHÁCH CUTE</h3>
+                            </div>
+                            <div class="album-img-item-1 product-1-none ">
+                                <img style="width: 95% ; height: 150px;" src="img/pr6-ha2.jpg" alt="">
+                                <h3 style="width: 100%; height: 40px; margin-top: 110px; font-weight: 800;">ANH TUẤN ĐÀ NẴNG</h3>
+                            </div>
+                            <div class="album-img-item-1 ">
+                                <img src="img/pr6-ha3.jpg" alt="">
+                                <h3>AI CAO HƠN ?</h3>
+                            </div>
+                            <div class="album-img-item-1 product-1-none ">
+                                <img style="width: 95% ; height: 150px;" src="img/pr6-ha4.jpg" alt="">
+                                <h3 style="width: 100%; height: 40px; margin-top: 110px; font-weight: 800s;">IDOL MML GHÉ CHƠI</h3>
+                            </div>
+                            <div class="album-img-item-1 ">
+                                <img src="img/pr6-ha5.jpg" alt="">
+                                <h3>Top 9 mũ hiểm fullface</h3>
+                            </div>
+                         </div>
+                    </section>
+                    <section class="video">
+                        <div class="video-1">
+                         <iframe width="560" height="315"  src="https://www.youtube.com/embed/WeebWerVMGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                     </section>
+         </section>
+    </main>
+    
+       <footer>
+        <section>
+            <div class="footer-1">
+               <div class="footer-1-content">
+                <h1 style="font-size: 20px;">LIÊN HỆ VỚI CHÚNG TÔI</h1>
+                <h3>
+                    <img src="img/logo.png" alt="">
+                </h3>
+                <p> Showroom Đà Nẵng : 56 Mẹ Nhu, Thanh Khê Tây, Quận Thanh Khê, Đà Nẵng.</p>
+                    
+                <p> Điện thoại: <b style="color:brown;"> 0931247996</b></p>
+                  
+                <p> Email: thanhnvpd09249@fpt.edu.vn</p>
+                <p>   Facebook: Fb.com/thanh233599</p>
+                  <strong>  Mở cửa T2-CN: 9h-21h </strong>
+               
+               </div>
+            </div>
+            <div class="footer-2">
+                <div class="footer-1-content">
+                    <h1 style="font-size: 20px;">Về chúng tôi</h1>
+                   <p>Với phương châm <b>AN TOÀN_NIỀM TIN_CHẤT LƯỢNG</b></p>
+                   <p>Chúng tôi chuyên nhập khẩu, mua bán nón bảo hiểm cao cấp các loại và phân phối phụ tùng nón bảo hiểm chất lượng cao để mang đến sự AN TOÀN cho bạn.</p>
+                   <h1>CHÍNH SÁCH</h1>
+                   <a href="">Chính sách thanh toán</a> <br>
+                    <a href="">Chính sách bảo hành</a> <br>
+                    <a href="">Chính sách đổi trả</a> <br>
+                    <a href="">Chính sách bảo mật</a> <br>
+                    <a href="">Chính sách vận chuyển và bảo hành</a>
+                   </div>
+            </div>
+        </section>
+        <div class="footer-4">
+            <p>© 2023 Việt Nam Phượt - Website chính thức của Thương Hiệu Mũ bảo hiểm phượt - Thiết kế bởi sikido.vn</p>
+        </div>
+       </footer>
+
+    <script src="https://uhchat.net/code.php?f=176869"></script>
+    <script src="main.js"></script>
+</body>
+</html>
